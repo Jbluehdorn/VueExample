@@ -8,6 +8,68 @@
 </head>
 <body>
     
+    <div id="app" class="container">
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-2">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Controls</h3>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            A
+                            <button class="btn btn-primary btn-xs pull-right" @click="incrementA()">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                            <button class="btn btn-danger btn-xs pull-right" @click="decrementA()">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            B
+                            <button class="btn btn-primary btn-xs pull-right" @click="incrementB()">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                            <button class="btn btn-danger btn-xs pull-right" @click="decrementB()">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            C
+                            <button class="btn btn-primary btn-xs pull-right" @click="incrementC()">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                            <button class="btn btn-danger btn-xs pull-right" @click="decrementC()">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Results</h3>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            A <span class="pull-right">{{countA}}</span>
+                        </li>
+                        <li class="list-group-item">
+                            B <span class="pull-right">{{countB}}</span>
+                        </li>
+                        <li class="list-group-item">
+                            C <span class="pull-right">{{countC}}</span>
+                        </li>
+                        <li class="list-group-item">
+                            Total <span class="pull-right">{{total}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./public/app.js"></script>
 </body>
 </html>
